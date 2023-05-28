@@ -1,5 +1,5 @@
-import minimist from 'minimist';
-import sharp from 'sharp';
+const minimist = require('minimist');
+const sharp = require('sharp');
 
 async function main() {
 	const args = minimist(process.argv.slice(2));

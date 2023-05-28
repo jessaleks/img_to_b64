@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "pkg ."
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,20 @@
   },
   "volta": {
     "node": "20.2.0"
+  },
+  "pkg": {
+    "targets": [
+      "node18-win-x64"
+    ],
+    "assets": [
+      "node_modules/sharp/build/Release/sharp-win32-x64.node",
+      "node_modules/sharp/lib/*.js"
+    ],
+    "outputPath": "dist"
+  },
+  "bin": "index.js",
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "jest": "^29.5.0"
   }
 }
