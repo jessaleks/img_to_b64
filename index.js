@@ -18,7 +18,7 @@ async function main() {
 		.then((buf) => Buffer.from(buf));
 
 	const placeholder = await sharp(image)
-		.resize(64, 30)
+		.resize(80, 48)
 		.toFormat('webp')
 		.modulate({ saturation: 1.2, brightness: 1 })
 		.blur(10)
