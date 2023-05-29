@@ -25,7 +25,7 @@ async function main() {
 		.toBuffer({ resolveWithObject: true });
 
 	console.log(
-		`data:image/${
+		`\ndata:image/${
 			placeholder.info.format
 		};base64,${placeholder.data.toString('base64')}`
 	);
